@@ -6,7 +6,7 @@
         <title>Honkitで書いたドキュメントをDockerでPDFに変換する · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 5.1.0">
+        <meta name="generator" content="HonKit 5.1.1">
         
         
         
@@ -158,9 +158,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="honkitで書いたドキュメントをdockerでpdfに変換する">Honkitで書いたドキュメントをDockerでPDFに変換する</h1>
-<p>このコマンドでできます</p>
-<pre><code class="lang-bash">docker run --<span class="hljs-built_in">rm</span> -v .:/honkit nishidemasami/markdown-docs:v1.2.0 npx honkit pdf ./ ./output.pdf
+<p>以下のコマンドでHonkitで書いたMarkdownによるドキュメントをDockerでPDFに変換することができます</p>
+<pre><code class="lang-bash">docker run --<span class="hljs-built_in">rm</span> -v .:/honkit nishidemasami/markdown-docs:v1.2.1 npx honkit pdf ./ ./output.pdf
 </code></pre>
+<p>このドキュメントは常にビルドされ、以下URLで最新版を確認することができます。</p>
+<p>HTML版：<br><a href="https://nishidemasami.github.io/honkit-document-sample/" target="_blank">https://nishidemasami.github.io/honkit-document-sample/</a></p>
+<p>PDF版：<br><a href="https://github.com/nishidemasami/honkit-document-sample/releases/download/pdf_relrase/output.pdf" target="_blank">https://github.com/nishidemasami/honkit-document-sample/releases/download/pdf_relrase/output.pdf</a></p>
 
                                 
                                 </section>
@@ -200,7 +203,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Honkitで書いたドキュメントをDockerでPDFに変換する","level":"1.1","depth":1,"next":{"title":"PlantUmlテスト","level":"1.2","depth":1,"path":"plantuml.md","ref":"plantuml.md","articles":[]},"dir":"ltr"},"config":{"plugins":["uml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"uml":{"format":"svg","charset":"utf8","config":"classic","nailgun":false},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"uml":{"charset":"UTF-8"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2023-09-24T09:02:46.861Z","type":"markdown"},"gitbook":{"version":"5.1.0","time":"2023-09-24T09:04:27.040Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Honkitで書いたドキュメントをDockerでPDFに変換する","level":"1.1","depth":1,"next":{"title":"PlantUmlテスト","level":"1.2","depth":1,"path":"plantuml.md","ref":"plantuml.md","articles":[]},"dir":"ltr"},"config":{"plugins":["uml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"uml":{"format":"svg","charset":"utf8","config":"classic","nailgun":false},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"uml":{"charset":"UTF-8"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2023-09-24T11:19:18.768Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2023-09-24T11:20:19.633Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
