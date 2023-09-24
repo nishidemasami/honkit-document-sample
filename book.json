@@ -1,0 +1,9 @@
+{
+    "plugins": [
+        "uml"
+    ],
+    "uml": {
+      "charset" : "UTF-8"
+    },
+    "language": "ja"
+}
