@@ -20,7 +20,7 @@ jobs:
       run: chmod -R 777 .
 
     - name: Generate PDF
-      run: docker run --rm -v .:/honkit nishidemasami/markdown-docs:v1.2.0 npx honkit pdf ./ ./output.pdf
+      run: docker run --rm -v .:/honkit ghcr.io/nishidemasami/markdown-docs:v1.2.1 npx honkit pdf ./ ./output.pdf
 
     - name: Upload PDF
       uses: actions/upload-artifact@v3
@@ -37,7 +37,7 @@ jobs:
         files: ./output.pdf
 
     - name: Generate pages
-      run: docker run --rm -v .:/honkit nishidemasami/markdown-docs:v1.2.0 npx honkit build
+      run: docker run --rm -v .:/honkit ghcr.io/nishidemasami/markdown-docs:v1.2.1 npx honkit build
 
     - name: Push to gh-pages
       uses: peaceiris/actions-gh-pages@v3
